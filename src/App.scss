@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: #222;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.weather-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  .weather-card {
+    background: linear-gradient(0deg, #000000, #000000), #000000;
+    opacity: 0.8;
+    border-radius: 55px;
+    padding: 53px 70px;
+    margin: 20px;
+    max-width: 760px;
+    width: 100%;
+    .search-input {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px 10px 40px;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), rgba($color: #585858, $alpha: 0.3);
+      border-radius: 55px;
+      input {
+        width: 100%;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 45px;
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.3);
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          outline: 0;
+          box-shadow: none;
+        }
+      }
+      .search-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba($color: #ffffff, $alpha: 0.9);
+        padding: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        transition: 0.3s;
+        &:hover,
+        &:active {
+          background: rgba($color: #ffffff, $alpha: 0.6);
+        }
+      }
+    }
+    .search-result {
+      .search-result-title,
+      .search-result-degree,
+      .search-result-weather,
+      .search-result-humidity,
+      .search-result-wind-speed {
+        font-family: 'Poppins';
+        font-style: normal;
+        color: rgba(249, 249, 249);
+      }
+      .search-result-title {
+        margin-top: 42px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+      }
+      .search-result-degree {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 75px;
+        margin-top: 20px;
+      }
+      .search-result-weather,
+      .search-result-humidity,
+      .search-result-wind-speed {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .search-result-weather {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
