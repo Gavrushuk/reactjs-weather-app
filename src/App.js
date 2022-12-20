@@ -5,7 +5,7 @@ import searchIcon from "./icons/search-icon.svg";
 const randomBgImageBaseUrl = 'https://source.unsplash.com/1920x1080/?';
 const weatherApiBaseUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const weatherIconBaseUrl = 'https://openweathermap.org/img/wn/';
-
+ 
 const App = () => {
   const [cityWeatherForecast, setCityWeatherForecast] = useState(null);
   const [searchedValue, setSearchedValue] = useState([]);
