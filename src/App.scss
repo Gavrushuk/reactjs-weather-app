@@ -43,7 +43,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 16px 10px 40px;
+      padding: 10px 10px 10px 40px;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), rgba($color: #585858, $alpha: 0.3);
       border-radius: 55px;
       input {
@@ -54,6 +54,7 @@ body {
         background: transparent;
         border: none;
         color: #ffffff;
+        padding-right: 16px;
         &::placeholder {
           color: rgba(255, 255, 255, 0.3);
         }
@@ -115,6 +116,53 @@ body {
         img {
           margin-right: 5px;
         }
+      }
+    }
+    .result-not-found {
+      font-family: 'Poppins';
+      font-style: normal;
+      color: rgba(249, 249, 249, 0.5);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .weather-card-wrapper {
+    .weather-card {
+      padding: 35px 25px;
+      .search-input {
+        padding: 5px 5px 5px 16px;
+        input {
+          font-size: 25px;
+        }
+        .search-btn {
+          padding: 10px;
+        }
+      }
+      .search-result {
+        .search-result-title {
+          margin-top: 21px;
+          font-size: 23px;
+          line-height: 40px;
+        }
+        .search-result-degree {
+          font-size: 30px;
+          line-height: 37.5px;
+          margin-top: 10px;
+        }
+        .search-result-weather,
+        .search-result-humidity,
+        .search-result-wind-speed {
+          font-size: 18px;
+        }
+      }
+      .result-not-found {
+        font-size: 18px;
       }
     }
   }
